@@ -1,0 +1,100 @@
+[
+  {
+    "id": "quiz-1",
+    "chapterId": "chapter-1",
+    "questions": [
+      {
+        "id": "q1-1",
+        "question": "What is React primarily used for?",
+        "options": [
+          "Building databases",
+          "Building user interfaces",
+          "Server-side programming",
+          "Mobile app development only"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "q1-2",
+        "question": "Which company originally developed React?",
+        "options": ["Google", "Microsoft", "Facebook (Meta)", "Apple"],
+        "answer": 2
+      },
+      {
+        "id": "q1-3",
+        "question": "What does JSX stand for?",
+        "options": ["JavaScript XML", "Java Syntax Extension", "JSON XML", "JavaScript Extension"],
+        "answer": 0
+      },
+      {
+        "id": "q1-4",
+        "question": "Which of the following is a key benefit of React's Virtual DOM?",
+        "options": ["Slower rendering", "Improved performance", "Larger bundle size", "More complex code"],
+        "answer": 1
+      },
+      {
+        "id": "q1-5",
+        "question": "What is the recommended way to create a new React app?",
+        "options": ["Manual setup", "Create React App", "Copy from another project", "Download from React website"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "quiz-2",
+    "chapterId": "chapter-2",
+    "questions": [
+      {
+        "id": "q2-1",
+        "question": "What are props in React?",
+        "options": [
+          "Mutable data that changes over time",
+          "Read-only data passed from parent to child",
+          "Functions that modify state",
+          "CSS properties"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "q2-2",
+        "question": "Can you modify props directly in a React component?",
+        "options": ["Yes, always", "No, props are read-only", "Only in class components", "Only with special methods"],
+        "answer": 1
+      },
+      {
+        "id": "q2-3",
+        "question": "How do props flow in React?",
+        "options": ["From child to parent", "Bidirectionally", "From parent to child", "Randomly"],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "quiz-3",
+    "chapterId": "chapter-3",
+    "questions": [
+      {
+        "id": "q3-1",
+        "question": "Which of the following is the correct arrow function syntax?",
+        "options": [
+          "const func = (x) -> x * 2",
+          "const func = (x) => x * 2",
+          "const func = (x) = x * 2",
+          "const func = x => { x * 2 }"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "q3-2",
+        "question": "What is a key benefit of arrow functions?",
+        "options": [
+          "They are slower",
+          "They have lexical this binding",
+          "They require more code",
+          "They don't support parameters"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+]

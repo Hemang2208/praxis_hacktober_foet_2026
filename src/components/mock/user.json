@@ -1,0 +1,37 @@
+{
+  "id": "user-1",
+  "name": "Ayush Kumar",
+  "email": "ayush@example.com",
+  "avatar": "https://placehold.co/40x40/svg",
+  "role": "User",
+  "bio": "Computer Science user passionate about web development and AI. Currently working on building my portfolio through real-world projects.",
+  "github": "ayushkumar",
+  "joinedAt": "2023-09-15T10:30:00Z",
+  "settings": {
+    "notifications": {
+      "email": true,
+      "push": true,
+      "taskReminders": true,
+      "projectUpdates": true,
+      "mentorMessages": true
+    },
+    "theme": "light",
+    "plan": "free"
+  },
+  "skills": [
+    { "name": "React", "level": 85 },
+    { "name": "TypeScript", "level": 78 },
+    { "name": "Node.js", "level": 72 },
+    { "name": "Git", "level": 88 },
+    { "name": "Problem Solving", "level": 82 },
+    { "name": "Testing", "level": 65 }
+  ],
+  "stats": {
+    "taskCompletionRate": 84,
+    "averageResponseTime": 2.3,
+    "codeQualityScore": 92,
+    "learningVelocity": 7.2,
+    "certificatesEarned": 5,
+    "projectsCompleted": 8
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "path-1",
+    "title": "React Fundamentals",
+    "description": "Learn the core concepts of React including components, state, and props",
+    "difficulty": "beginner",
+    "estimatedHours": 20,
+    "tags": ["react", "javascript", "frontend"],
+    "progress": 45,
+    "enrolledAt": "2024-01-15T10:00:00Z",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Introduction to React",
+        "description": "Get started with React basics and understand the component-based architecture",
+        "completed": false,
+        "sections": [
+          {
+            "id": "section-1-1",
+            "title": "What is React?",
+            "content": "# What is React?\n\nReact is a **JavaScript library** for building user interfaces. It was developed by Facebook and is now maintained by Meta and the open-source community.\n\n## Key Features\n\n- **Component-Based**: Build encapsulated components that manage their own state\n- **Declarative**: React makes it painless to create interactive UIs\n- **Learn Once, Write Anywhere**: You can develop new features without rewriting existing code\n\n## Why Use React?\n\n1. **Virtual DOM**: React uses a virtual DOM to improve performance\n2. **Reusable Components**: Write once, use everywhere\n3. **Strong Community**: Large ecosystem and community support\n\n```jsx\nfunction Welcome(props) {\n  return <h1>Hello, {props.name}!</h1>;\n}\n```\n\nThis simple example shows how React components work with JSX syntax.",
+            "completed": false,
+            "estimatedTime": 15,
+            "notes": ""
+          },
+          {
+            "id": "section-1-2",
+            "title": "Setting Up Your Environment",
+            "content": "# Setting Up Your Development Environment\n\nBefore we start building React applications, we need to set up our development environment.\n\n## Prerequisites\n\n- **Node.js** (version 14 or higher)\n- **npm** or **yarn** package manager\n- A code editor (VS Code recommended)\n\n## Creating a New React App\n\nThe easiest way to get started is with Create React App:\n\n```bash\nnpx create-react-app my-app\ncd my-app\nnpm start\n```\n\n## Project Structure\n\nAfter creating your app, you'll see this structure:\n\n```\nmy-app/\n  README.md\n  node_modules/\n  package.json\n  public/\n    index.html\n    favicon.ico\n  src/\n    App.css\n    App.js\n    App.test.js\n    index.css\n    index.js\n```\n\n## Development Tools\n\n- **React Developer Tools**: Browser extension for debugging\n- **ESLint**: Code linting\n- **Prettier**: Code formatting",
+            "completed": false,
+            "estimatedTime": 20,
+            "notes": ""
+          },
+          {
+            "id": "section-1-3",
+            "title": "Your First Component",
+            "content": "# Creating Your First React Component\n\nLet's create a simple React component to understand the basics.\n\n## Function Components\n\nThe modern way to create components in React:\n\n```jsx\nfunction Greeting({ name }) {\n  return (\n    <div>\n      <h1>Hello, {name}!</h1>\n      <p>Welcome to React!</p>\n    </div>\n  );\n}\n```\n\n## Using Components\n\nOnce you've created a component, you can use it like this:\n\n```jsx\nfunction App() {\n  return (\n    <div>\n      <Greeting name=\"Alice\" />\n      <Greeting name=\"Bob\" />\n    </div>\n  );\n}\n```\n\n## Key Concepts\n\n1. **JSX**: JavaScript XML syntax\n2. **Props**: Data passed to components\n3. **Return**: Components must return JSX\n\n## Best Practices\n\n- Use PascalCase for component names\n- Keep components small and focused\n- Use descriptive prop names",
+            "completed": false,
+            "estimatedTime": 25,
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "id": "chapter-2",
+        "title": "State and Props",
+        "description": "Learn how to manage component state and pass data between components",
+        "completed": false,
+        "sections": [
+          {
+            "id": "section-2-1",
+            "title": "Understanding Props",
+            "content": "# Understanding Props in React\n\nProps (short for properties) are how we pass data from parent components to child components.\n\n## What are Props?\n\nProps are **read-only** data that flows down from parent to child components.\n\n```jsx\n// Parent component\nfunction App() {\n  return <UserCard name=\"John\" age={25} />;\n}\n\n// Child component\nfunction UserCard({ name, age }) {\n  return (\n    <div>\n      <h2>{name}</h2>\n      <p>Age: {age}</p>\n    </div>\n  );\n}\n```\n\n## Props Rules\n\n1. **Immutable**: Never modify props directly\n2. **One-way**: Data flows from parent to child\n3. **Any type**: Props can be strings, numbers, objects, functions, etc.\n\n## Default Props\n\nYou can set default values for props:\n\n```jsx\nfunction Button({ text = \"Click me\", onClick }) {\n  return <button onClick={onClick}>{text}</button>;\n}\n```",
+            "completed": false,
+            "estimatedTime": 18,
+            "notes": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "path-2",
+    "title": "JavaScript ES6+",
+    "description": "Master modern JavaScript features and syntax",
+    "difficulty": "intermediate",
+    "estimatedHours": 15,
+    "tags": ["javascript", "es6", "programming"],
+    "progress": 0,
+    "enrolledAt": "2024-01-20T14:30:00Z",
+    "chapters": [
+      {
+        "id": "chapter-3",
+        "title": "Arrow Functions and Destructuring",
+        "description": "Learn modern JavaScript syntax including arrow functions and destructuring",
+        "completed": false,
+        "sections": [
+          {
+            "id": "section-3-1",
+            "title": "Arrow Functions",
+            "content": "# Arrow Functions in JavaScript\n\nArrow functions provide a more concise way to write functions in JavaScript.\n\n## Basic Syntax\n\n```javascript\n// Traditional function\nfunction add(a, b) {\n  return a + b;\n}\n\n// Arrow function\nconst add = (a, b) => a + b;\n```\n\n## Benefits\n\n- **Shorter syntax**\n- **Lexical this binding**\n- **Implicit return** for single expressions\n\n## Examples\n\n```javascript\n// No parameters\nconst greet = () => console.log('Hello!');\n\n// One parameter (parentheses optional)\nconst square = x => x * x;\n\n// Multiple parameters\nconst multiply = (a, b) => a * b;\n\n// Block body\nconst processData = (data) => {\n  const processed = data.map(item => item * 2);\n  return processed;\n};\n```",
+            "completed": false,
+            "estimatedTime": 12,
+            "notes": ""
+          }
+        ]
+      }
+    ]
+  }
+]

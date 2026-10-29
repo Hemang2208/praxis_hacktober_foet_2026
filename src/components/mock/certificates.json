@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cert-1",
+    "title": "React Fundamentals Certificate",
+    "description": "Demonstrates proficiency in React basics including components, props, and state management",
+    "issuer": "Kiyo Academy",
+    "issuedAt": "2024-01-15T10:00:00Z",
+    "credentialId": "REACT-FUND-2024-001",
+    "verificationUrl": "https://Kiyo.dev/verify/REACT-FUND-2024-001",
+    "skills": ["React", "JavaScript", "JSX", "Components"],
+    "pathId": "path-1",
+    "status": "earned"
+  },
+  {
+    "id": "cert-2",
+    "title": "JavaScript ES6+ Mastery",
+    "description": "Advanced JavaScript programming with modern ES6+ features",
+    "issuer": "Kiyo Academy",
+    "issuedAt": "2024-01-20T14:30:00Z",
+    "credentialId": "JS-ES6-2024-002",
+    "verificationUrl": "https://Kiyo.dev/verify/JS-ES6-2024-002",
+    "skills": ["JavaScript", "ES6", "Arrow Functions", "Destructuring"],
+    "pathId": "path-2",
+    "status": "in-progress"
+  },
+  {
+    "id": "cert-3",
+    "title": "Full Stack Development",
+    "description": "Complete full stack web development certification",
+    "issuer": "Kiyo Academy",
+    "issuedAt": "2024-02-01T09:00:00Z",
+    "credentialId": "FULLSTACK-2024-003",
+    "verificationUrl": "https://Kiyo.dev/verify/FULLSTACK-2024-003",
+    "skills": ["React", "Node.js", "Database", "API Development"],
+    "status": "in-progress"
+  }
+]

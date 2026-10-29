@@ -1,0 +1,11 @@
+**/node_modules
+**/.next
+**/.git
+npm-debug.log
+Dockerfile
+.dockerignore
+.gitignore
+out
+.vercel
+README.md
+kiyo
