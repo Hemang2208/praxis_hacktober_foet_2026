@@ -276,12 +276,6 @@ export default function NewLandingPage() {
     offset: ["start start", "end start"],
   });
 
-  const heroImageScale = useTransform(heroScrollProgress, [0, 0.15], [0.92, 1]);
-  const heroImageRotateX = useTransform(heroScrollProgress, [0, 0.15], [10, 0]);
-  const heroImageY = useTransform(heroScrollProgress, [0, 0.15], [0, 0]);
-  const heroImageOpacity = useTransform(heroScrollProgress, [0, 0.08], [0.95, 1]);
-  const heroMaskReveal = useTransform(heroScrollProgress, [0, 0.08], [95, 100]);
-  const heroMaskEdge = useTransform(heroMaskReveal, (v: number) => v + 5);
 
   const [activeWorkflow, setActiveWorkflow] = useState(0);
   const workflowSectionRef = useRef<HTMLDivElement>(null);
@@ -548,37 +542,6 @@ export default function NewLandingPage() {
               </motion.div>
             ))}
           </div>
-        </div>
-
-        <div className="mt-8 lg:mt-16 px-4 sm:px-6 max-w-7xl mx-auto [perspective:2000px] relative z-20 pb-8 overflow-visible">
-          <motion.div
-            style={{
-              scale: heroImageScale,
-              opacity: heroImageOpacity,
-              rotateX: heroImageRotateX,
-              y: heroImageY,
-              maskImage: `linear-gradient(to bottom, black 0%, black ${heroMaskReveal}%, transparent ${heroMaskEdge}%)`,
-              WebkitMaskImage: `linear-gradient(to bottom, black 0%, black ${heroMaskReveal}%, transparent ${heroMaskEdge}%)`,
-              transformOrigin: "top center",
-              transformStyle: "preserve-3d",
-            }}
-            initial={{ y: 60, opacity: 0, rotateX: 15 }}
-            animate={{ y: 0, opacity: 1, rotateX: 10 }}
-            transition={{ duration: 1.4, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="relative"
-          >
-            <div className="relative overflow-hidden rounded-[1.5rem] lg:rounded-[2.25rem] border border-border/50 bg-background/80 shadow-[0_50px_100px_-30px_rgba(0,0,0,0.5)]">
-              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_rgba(255,255,255,0.05),_transparent_40%)] z-10" />
-              <Image
-                src="/dashboard-black.png"
-                alt="Enterprise Dashboard"
-                width={2531}
-                height={1209}
-                className="w-full h-auto block"
-                priority
-              />
-            </div>
-          </motion.div>
         </div>
       </section>
 

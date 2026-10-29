@@ -318,23 +318,6 @@ const LandingPage = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.5,
-              duration: 0.8,
-              ease: [0.25, 0.1, 0.25, 1],
-            }}
-          >
-            <Image
-              src="/dashboard-black.png"
-              alt="Enterprise AI Project Management Dashboard"
-              width={2531}
-              height={1209}
-              className="mt-12 mx-auto rounded-2xl shadow-2xl border border-gray-300 w-full h-auto block"
-            />
-          </motion.div>
         </div>
 
         {/* Trusted by section */}
