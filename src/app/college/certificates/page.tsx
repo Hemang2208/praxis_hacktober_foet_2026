@@ -45,12 +45,12 @@ export default function CertificatesPage() {
     {
       id: "cert123",
       title: "AI Fundamentals",
-      issuer: "Kiyo College",
+      issuer: "Praxis College",
       description: "Certificate for completion of AI Fundamentals.",
       studentName: "Amit Sharma",
       skills: ["Python", "ML"],
       issuedAt: new Date().toISOString(),
-      credentialId: "KIYO-2026-001",
+      credentialId: "PRAXIS-2026-001",
       verificationUrl: "#",
     },
   ]);

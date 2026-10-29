@@ -2290,13 +2290,13 @@ const KiyoLogoIcon: React.FC<{ isThinking?: boolean; size?: string }> = ({
         className="relative z-10 flex items-center justify-center"
       >
         <img
-          src="/KiyoLogoBnoBG.png"
-          alt="Kiyo"
+          src="/logo.png"
+          alt="Praxis"
           className={cn(size, "object-contain dark:hidden")}
         />
         <img
-          src="/KiyoLogoWnoBG.png"
-          alt="Kiyo"
+          src="/logo.png"
+          alt="Praxis"
           className={cn(size, "object-contain hidden dark:block")}
         />
       </motion.div>
@@ -2354,7 +2354,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <CreateProjectForm
               onSuccess={(title) => {
@@ -2377,7 +2377,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <CreateTaskForm
               onSuccess={(title) => {
@@ -2400,7 +2400,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <CreatePlanForm
               onSuccess={(title) => {
@@ -2423,7 +2423,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <GenerateTasksForm
               onSuccess={(title) => {
@@ -2446,7 +2446,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <GenerateSubtasksForm
               onSuccess={(title) => {
@@ -2469,7 +2469,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <CreateAssessmentForm
               onSuccess={(title) => {
@@ -2492,7 +2492,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <DeleteTaskForm
               onSuccess={(title) => {
@@ -2515,7 +2515,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <DeleteProjectForm
               onSuccess={(title) => {
@@ -2538,7 +2538,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <UpdateTaskForm
               onSuccess={(title) => {
@@ -2561,11 +2561,11 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <div className="p-4 bg-white/40 dark:bg-zinc-900/40 backdrop-blur-md rounded-2xl border border-zinc-200/50 dark:border-zinc-800/50 text-foreground w-full space-y-3">
               <h4 className="text-xs font-bold uppercase tracking-wider text-primary">Connect GitHub Account</h4>
-              <p className="text-xs text-muted-foreground">Authorize Kiyo OS to access your GitHub repositories and sync your commit history.</p>
+              <p className="text-xs text-muted-foreground">Authorize Praxis OS to access your GitHub repositories and sync your commit history.</p>
               <Button
                 onClick={() => {
                   window.location.href = "/api/github/oauth/start?redirect=/user/github/authorize";
@@ -2589,7 +2589,7 @@ const MessageBubble: React.FC<{
           <Avatar />
           <div className="w-full flex flex-col items-start text-sm">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
             </div>
             <SyncGitHubForm
               onSuccess={(username) => {
@@ -2674,7 +2674,7 @@ const MessageBubble: React.FC<{
           {/* Header for assistant with name and optional type badge */}
           {!isUser && (
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-sm font-semibold text-foreground">Kiyo</span>
+              <span className="text-sm font-semibold text-foreground">Praxis</span>
               {isSpecialType && (
                 <span className="text-[0.65rem] bg-muted px-2 py-0.5 rounded-full text-muted-foreground font-bold border border-border/80">
                   {message.type.replace("-", " ")}

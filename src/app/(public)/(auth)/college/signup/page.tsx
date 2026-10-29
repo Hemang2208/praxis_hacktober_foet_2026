@@ -78,7 +78,7 @@ export default function CollegeSignup() {
       <div className="flex items-center justify-center mb-4">
         <Image
           src="/logo.png"
-          alt="Kiyo Logo"
+          alt="Praxis Logo"
           width={48}
           height={48}
           className="cursor-pointer object-contain"
@@ -86,10 +86,10 @@ export default function CollegeSignup() {
         />
       </div>
       <h2 className="text-center text-3xl font-semibold tracking-tight">
-        Register your college on Kiyo
+        Register your college on Praxis
       </h2>
       <p className="mt-2 text-center text-sm text-slate-600">
-        Bring your campus activities to Kiyo
+        Bring your campus activities to Praxis
       </p>
       <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
         {error && (

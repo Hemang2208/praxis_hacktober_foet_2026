@@ -8,8 +8,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Authentication - Kiyo",
-  description: "Authentication pages for Kiyo",
+  title: "Authentication - Praxis",
+  description: "Authentication pages for Praxis",
 };
 
 export default function AuthLayout({

@@ -470,7 +470,7 @@ const LandingPage = () => {
               variants={itemFadeIn}
               className="text-3xl lg:text-4xl font-bold mb-4"
             >
-              Why Enterprises Choose Kiyo
+              Why Enterprises Choose Praxis
             </motion.h2>
             <motion.p
               variants={itemFadeIn}

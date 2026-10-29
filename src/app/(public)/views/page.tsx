@@ -476,7 +476,7 @@ function ViewsPageContent() {
 
     const selectedTabLabel =
       activeTab.charAt(0).toUpperCase() + activeTab.slice(1);
-    const fileName = `Kiyo_${selectedTabLabel}_File.csv`;
+    const fileName = `Praxis_${selectedTabLabel}_File.csv`;
 
     const link = document.createElement("a");
 

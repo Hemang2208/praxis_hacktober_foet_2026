@@ -262,7 +262,7 @@ export function DashboardSidebar({
                       transition={{ duration: 0.15 }}
                       className="text-lg font-semibold text-foreground"
                     >
-                      Kiyo
+                      Praxis
                     </motion.span>
                   )}
                 </AnimatePresence>
@@ -396,7 +396,7 @@ export function DashboardSidebar({
                     className="object-fit hidden dark:block"
                   />
                   <span className="text-xl font-bold text-zinc-900 dark:text-[#F5F5F5]">
-                    Kiyo
+                    Praxis
                   </span>
                 </Link>
                 <Button

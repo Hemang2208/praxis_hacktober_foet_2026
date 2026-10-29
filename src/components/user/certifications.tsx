@@ -27,7 +27,7 @@ const earnedCertificates = [
   {
     id: 1,
     title: "React Development Fundamentals",
-    issuer: "Kiyo Academy",
+    issuer: "Praxis Academy",
     dateEarned: "January 15, 2024",
     score: 94,
     credentialId: "SL-REACT-2024-001",
@@ -38,7 +38,7 @@ const earnedCertificates = [
   {
     id: 2,
     title: "Git & Version Control Mastery",
-    issuer: "Kiyo Academy",
+    issuer: "Praxis Academy",
     dateEarned: "January 10, 2024",
     score: 89,
     credentialId: "SL-GIT-2024-002",
@@ -49,7 +49,7 @@ const earnedCertificates = [
   {
     id: 3,
     title: "JavaScript ES6+ Proficiency",
-    issuer: "Kiyo Academy",
+    issuer: "Praxis Academy",
     dateEarned: "January 5, 2024",
     score: 92,
     credentialId: "SL-JS-2024-003",
@@ -60,7 +60,7 @@ const earnedCertificates = [
   {
     id: 4,
     title: "Agile Development Practices",
-    issuer: "Kiyo Academy",
+    issuer: "Praxis Academy",
     dateEarned: "December 28, 2023",
     score: 87,
     credentialId: "SL-AGILE-2023-004",
@@ -71,7 +71,7 @@ const earnedCertificates = [
   {
     id: 5,
     title: "Code Quality & Testing",
-    issuer: "Kiyo Academy",
+    issuer: "Praxis Academy",
     dateEarned: "December 20, 2023",
     score: 91,
     credentialId: "SL-TEST-2023-005",

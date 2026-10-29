@@ -45,9 +45,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Kiyo | Enterprise AI-Driven Project & Talent Management",
+  title: "Praxis | Enterprise AI-Driven Project & Talent Management",
   description:
-    "Kiyo is an AI-powered platform revolutionizing enterprise project management with autonomous task orchestration and integrated talent development. By simulating real-world scenarios, it bridges the gap between education and industry, empowering companies, colleges, and professionals to build practical skills and drive measurable outcomes.",
+    "Praxis is an AI-powered platform revolutionizing enterprise project management with autonomous task orchestration and integrated talent development. By simulating real-world scenarios, it bridges the gap between education and industry, empowering companies, colleges, and professionals to build practical skills and drive measurable outcomes.",
 };
 
 export default function RootLayout({

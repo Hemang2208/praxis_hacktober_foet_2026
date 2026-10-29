@@ -76,7 +76,7 @@ export default function TermsAndConditionsPage() {
           >
             Clear guidelines for a fair and transparent partnership.
             Understanding your rights and responsibilities while using
-            Kiyo&apos;s platform.
+            Praxis&apos;s platform.
           </motion.p>
         </div>
       </motion.section>
@@ -96,7 +96,7 @@ export default function TermsAndConditionsPage() {
               <Card className="border-0 shadow-lg bg-background/50 backdrop-blur">
                 <CardContent className="p-8">
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    Welcome to Kiyo. By accessing or using our enterprise
+                    Welcome to Praxis. By accessing or using our enterprise
                     project management platform, you agree to be bound by these
                     Terms and Conditions. These terms ensure a fair and
                     productive environment for all users while protecting both
@@ -215,7 +215,7 @@ export default function TermsAndConditionsPage() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-muted-foreground leading-relaxed">
-                    All content, features, and functionality of Kiyo are owned
+                    All content, features, and functionality of Praxis are owned
                     by us and are protected by copyright, trademark, and other
                     intellectual property laws. You retain ownership of the
                     content you create using our platform, while granting us
@@ -238,7 +238,7 @@ export default function TermsAndConditionsPage() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Kiyo provides services on an &quot;as is&quot; basis. While
+                    Praxis provides services on an &quot;as is&quot; basis. While
                     we strive for excellence, we cannot guarantee uninterrupted
                     service or complete error-free operation. Our liability is
                     limited to the extent permitted by applicable law.

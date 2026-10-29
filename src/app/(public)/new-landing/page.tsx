@@ -392,28 +392,12 @@ export default function NewLandingPage() {
                   >
                     <span className="relative flex items-center justify-center h-[1.4em] overflow-hidden leading-none">
                       <span className="w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
-                        Try Kiyo
+                        Try Praxis
                         <ArrowRight className="h-4 w-4" />
                       </span>
                       <span className="absolute inset-0 w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 translate-y-full group-hover:translate-y-0 whitespace-nowrap">
-                        Try Kiyo
+                        Try Praxis
                         <ArrowRight className="h-4 w-4" />
-                      </span>
-                    </span>
-                  </motion.button>
-                </Link>
-                <Link href="/contact" className="w-full sm:w-auto">
-                  <motion.button
-                    whileHover={{ y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="group w-full sm:w-auto rounded-full border border-border/60 bg-background/70 px-7 py-4 text-sm font-semibold text-foreground hover:border-foreground/40 transition-colors"
-                  >
-                    <span className="relative flex items-center justify-center h-[1.4em] overflow-hidden leading-none">
-                      <span className="w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
-                        Book Demo
-                      </span>
-                      <span className="absolute inset-0 w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 translate-y-full group-hover:translate-y-0 whitespace-nowrap">
-                        Book Demo
                       </span>
                     </span>
                   </motion.button>
@@ -452,7 +436,7 @@ export default function NewLandingPage() {
                       <Bot className="h-7 w-7" />
                     </div>
                     <div>
-                      <div className="text-lg font-semibold">Kiyo AI Pilot</div>
+                      <div className="text-lg font-semibold">Praxis AI Pilot</div>
                       <div className="mt-1 text-[10px] uppercase tracking-[0.3em] text-zinc-500">
                         Enterprise orchestration
                       </div>
@@ -650,7 +634,7 @@ export default function NewLandingPage() {
               transition={{ delay: 0.1 }}
               className="max-w-2xl mx-auto text-lg text-zinc-500"
             >
-              From registrations to active platform users and academic POC collaborations, Kiyo is gaining rapid real-world adoption.
+              From registrations to active platform users and academic POC collaborations, Praxis is gaining rapid real-world adoption.
             </motion.p>
           </div>
 
@@ -705,7 +689,7 @@ export default function NewLandingPage() {
                 viewport={{ once: true }}
                 className="mt-6 text-3xl md:text-5xl font-semibold tracking-tight"
               >
-                Why engineering teams choose Kiyo
+                Why engineering teams choose Praxis
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -794,7 +778,7 @@ export default function NewLandingPage() {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="mt-6 text-lg text-zinc-500"
                 >
-                  From onboarding to implicit preference capture, Kiyo builds the future of developer enablement.
+                  From onboarding to implicit preference capture, Praxis builds the future of developer enablement.
                 </motion.p>
 
                 <div className="mt-10 relative">
@@ -1156,7 +1140,7 @@ export default function NewLandingPage() {
                     Capability
                   </th>
                   <th className="text-center py-4 px-3 sm:py-5 sm:px-6 font-semibold">
-                    Kiyo AI
+                    Praxis AI
                   </th>
                   <th className="text-center py-4 px-3 sm:py-5 sm:px-6 font-semibold">
                     LMS (Docebo)
@@ -1231,28 +1215,12 @@ export default function NewLandingPage() {
                 >
                   <span className="relative flex items-center justify-center h-[1.4em] overflow-hidden leading-none">
                     <span className="w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
-                      Try Kiyo
+                      Try Praxis
                       <ArrowRight className="h-4 w-4" />
                     </span>
                     <span className="absolute inset-0 w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 translate-y-full group-hover:translate-y-0 whitespace-nowrap">
-                      Try Kiyo
+                      Try Praxis
                       <ArrowRight className="h-4 w-4" />
-                    </span>
-                  </span>
-                </motion.button>
-              </Link>
-              <Link href="/contact" className="w-full sm:w-auto">
-                <motion.button
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group w-full sm:w-auto rounded-full border border-border/60 bg-background/70 px-7 py-4 text-sm font-semibold text-foreground hover:border-foreground/40 transition-colors"
-                >
-                  <span className="relative flex items-center justify-center h-[1.4em] overflow-hidden leading-none">
-                    <span className="w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
-                      Book Demo
-                    </span>
-                    <span className="absolute inset-0 w-full h-full flex items-center justify-center gap-2 transition-transform duration-300 translate-y-full group-hover:translate-y-0 whitespace-nowrap">
-                      Book Demo
                     </span>
                   </span>
                 </motion.button>

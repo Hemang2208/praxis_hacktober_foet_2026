@@ -3,7 +3,7 @@ import ProfileLayout from "./provider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "User Profile | Kiyo",
+  title: "User Profile | Praxis",
   description:
     "Manage your personal information, experience, and career goals.",
 };

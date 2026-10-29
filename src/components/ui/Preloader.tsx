@@ -105,8 +105,8 @@ export default function Preloader() {
                 className="relative w-12 h-12 sm:w-16 sm:h-16" // Decreased from w-16 h-16 sm:w-20 sm:h-20
               >
                 <Image
-                  src="/KiyoLogoWnoBG.png"
-                  alt="Kiyo Logo"
+                  src="/logo.png"
+                  alt="Praxis Logo"
                   fill
                   priority
                   className="object-contain"
@@ -123,7 +123,7 @@ export default function Preloader() {
                 }}
                 className="text-[clamp(0.85rem,1.8vw,1.2rem)] font-bold uppercase tracking-[0.25em] text-white/90 font-grotesk select-none pl-[0.25em]" // Decreased from clamp(0.95rem,2.2vw,1.5rem)
               >
-                Kiyo
+                Praxis
               </motion.span>
             </motion.div>
           </motion.div>

@@ -106,7 +106,7 @@ export async function exportPlanToPdf(
   pdf.setFont(FONTS.bold, "bold");
   pdf.setFontSize(24);
   pdf.setTextColor(COLORS.accentBlue);
-  pdf.text("Kiyo", margin, 15);
+  pdf.text("Praxis", margin, 15);
 
   pdf.setFont(FONTS.normal, "normal");
   pdf.setFontSize(10);

@@ -318,11 +318,11 @@ export default function PlanPage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 py-4">
           <div className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-sm">
-              K
+              P
             </div>
             <div>
               <h1 className="text-lg font-semibold text-foreground">
-                Kiyo Planner
+                Praxis Planner
               </h1>
               <p className="text-xs text-muted-foreground">
                 Project planning made simple

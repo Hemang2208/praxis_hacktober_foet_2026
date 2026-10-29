@@ -96,7 +96,7 @@ function StudentSignupContent() {
       <div className="flex items-center justify-center mb-4">
         <Image
           src="/logo.png"
-          alt="Kiyo Logo"
+          alt="Praxis Logo"
           width={48}
           height={48}
           className="cursor-pointer object-contain"
@@ -107,7 +107,7 @@ function StudentSignupContent() {
         Create your user account
       </h2>
       <p className="mt-2 text-center text-sm text-slate-600">
-        Join Kiyo as a user
+        Join Praxis as a user
       </p>
 
       {/* OAuth Buttons */}

@@ -47,21 +47,9 @@ export default function Navbar() {
                         >
                             <button
                                 className="px-4 py-2 text-left hover:bg-gray-700 transition-colors rounded-xl"
-                                onClick={() => window.location.href = "/about"}
+                                onClick={() => window.location.href = "/preregister"}
                             >
-                                About
-                            </button>
-                            <button
-                                className="px-4 py-2 text-left hover:bg-gray-700 transition-colors rounded-xl"
-                                onClick={() => window.location.href = "/careers"}
-                            >
-                                Careers
-                            </button>
-                            <button
-                                className="px-4 py-2 text-left hover:bg-gray-700 transition-colors rounded-xl"
-                                onClick={() => window.location.href = "/contact"}
-                            >
-                                Contact
+                                Pre-Register
                             </button>
                             <button
                                 className="px-4 py-2 text-left hover:bg-gray-700 bg-black transition-colors rounded-xl"

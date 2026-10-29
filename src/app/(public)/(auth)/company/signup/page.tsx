@@ -87,7 +87,7 @@ export default function CompanySignup() {
         <Image
           onClick={() => router.push("/")}
           src="/logo.png"
-          alt="Kiyo Logo"
+          alt="Praxis Logo"
           width={48}
           height={48}
           className="cursor-pointer"

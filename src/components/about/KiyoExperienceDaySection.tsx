@@ -116,7 +116,7 @@ const GlobalRecognitionSection = () => {
             </h2>
 
             <p className="text-base lg:text-lg text-zinc-500 leading-[1.9] max-w-xl">
-              Kiyo has been recognized as the{" "}
+              Praxis has been recognized as the{" "}
               <strong className="font-semibold text-zinc-900">
                 Project &amp; Talent Management Platform of the Year
               </strong>{" "}
@@ -162,7 +162,7 @@ const GlobalRecognitionSection = () => {
                 >
                   <Image
                     src="/winner.png"
-                    alt="Kiyo Global Recognition Award"
+                    alt="Praxis Global Recognition Award"
                     fill
                     sizes="(max-width: 640px) 280px, 420px"
                     className="object-cover"

@@ -102,7 +102,7 @@ const integrations: Integration[] = [
     id: "linear",
     name: "Linear",
     description:
-      "Streamlined issue tracking and sprint management synced directly with Kiyo project boards.",
+      "Streamlined issue tracking and sprint management synced directly with Praxis project boards.",
     icon: Kanban,
     iconBg: "bg-indigo-50 dark:bg-indigo-950/30",
     iconColor: "text-indigo-600 dark:text-indigo-400",
@@ -146,7 +146,7 @@ const integrations: Integration[] = [
     id: "trello",
     name: "Trello",
     description:
-      "Import Trello boards and cards to visualize your project workflow inside Kiyo.",
+      "Import Trello boards and cards to visualize your project workflow inside Praxis.",
     icon: Trello,
     iconBg: "bg-sky-50 dark:bg-sky-950/30",
     iconColor: "text-sky-500 dark:text-sky-400",
@@ -179,7 +179,7 @@ const integrations: Integration[] = [
     id: "zapier",
     name: "Zapier",
     description:
-      "Automate workflows by connecting Kiyo with 5,000+ apps using Zapier triggers and actions.",
+      "Automate workflows by connecting Praxis with 5,000+ apps using Zapier triggers and actions.",
     icon: Zap,
     iconBg: "bg-orange-50 dark:bg-orange-950/30",
     iconColor: "text-orange-500 dark:text-orange-400",

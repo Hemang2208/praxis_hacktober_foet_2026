@@ -20,9 +20,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/careers", label: "Careers" },
-    { href: "/contact", label: "Contact" },
+    { href: "/preregister", label: "Pre-Register" },
   ];
 
   useEffect(() => {
@@ -69,13 +67,13 @@ export default function Navbar() {
             <div className="relative flex items-center justify-center">
               <Image
                 src="/logo.png"
-                alt="Kiyo Logo"
+                alt="Praxis Logo"
                 width={20}
                 height={20}
                 className="h-5 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
               />
             </div>
-            <span className="text-xl font-bold tracking-tight text-foreground">Kiyo</span>
+            <span className="text-xl font-bold tracking-tight text-foreground">Praxis</span>
           </Link>
         </motion.div>
 
@@ -127,7 +125,7 @@ export default function Navbar() {
             <Button
               className="hidden md:inline-flex bg-black text-white hover:bg-gray-800 rounded-full px-5 py-2 font-semibold shadow-lg transition"
             >
-              Try Kiyo
+              Try Praxis
             </Button>
           </Link>
         </motion.div>
@@ -177,7 +175,7 @@ export default function Navbar() {
                 <Button
                   className="w-full bg-black text-white hover:bg-gray-800 rounded-full px-5 py-2 font-semibold shadow-lg transition"
                 >
-                  Try Kiyo
+                  Try Praxis
                 </Button>
               </Link>
             </div>

@@ -228,7 +228,7 @@ export default function PreRegisterPage() {
           <div className="bg-black text-white p-6">
             <h1 className="text-2xl font-bold flex items-center gap-2">
               <Sparkles className="w-6 h-6" />
-              Join KIYO 
+              Join Praxis 
             </h1>
             <p className="text-gray-300 text-sm mt-1">
               Get early access to your AI Project Manager 🚀
@@ -466,7 +466,7 @@ export default function PreRegisterPage() {
                   You&apos;re on the list!
                 </h3>
                 <p className="text-gray-600">
-                  Thank you for pre-registering. We&apos;ll notify you when KIYO
+                  Thank you for pre-registering. We&apos;ll notify you when Praxis
                   is ready for you.
                 </p>
               </motion.div>

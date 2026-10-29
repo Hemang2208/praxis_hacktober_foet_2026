@@ -67,7 +67,7 @@ export default function CookiePolicyPage() {
             variants={itemFadeIn}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
           >
-            Transparent practices for a better web experience. Learn how Kiyo
+            Transparent practices for a better web experience. Learn how Praxis
             uses cookies to enhance your journey with our platform.
           </motion.p>
         </div>
@@ -88,7 +88,7 @@ export default function CookiePolicyPage() {
               <Card className="border-0 shadow-lg bg-background/50 backdrop-blur">
                 <CardContent className="p-8">
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    Kiyo uses cookies to enhance your experience on our website.
+                    Praxis uses cookies to enhance your experience on our website.
                     This Cookie Policy explains what cookies are, how we use
                     them, and your choices regarding cookies. We believe in
                     transparency and want you to understand exactly how we

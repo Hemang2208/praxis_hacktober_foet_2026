@@ -56,7 +56,7 @@ export default function CollegeLogin() {
       <div className="flex items-center justify-center mb-4">
         <Image
           src="/logo.png"
-          alt="Kiyo Logo"
+          alt="Praxis Logo"
           width={48}
           height={48}
           className="cursor-pointer object-contain"

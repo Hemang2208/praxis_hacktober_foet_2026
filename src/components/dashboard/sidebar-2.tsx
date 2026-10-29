@@ -297,7 +297,7 @@ export function DashboardSidebar({
                   />
                   {!isCollapsed && (
                     <span className="text-xl font-semibold text-foreground">
-                      Kiyo
+                      Praxis
                     </span>
                   )}
                 </Link>
@@ -541,7 +541,7 @@ export function DashboardSidebar({
                     className="object-fit hidden dark:block"
                   />
                   <span className="text-xl font-bold text-zinc-900 dark:text-[#F5F5F5]">
-                    Kiyo
+                    Praxis
                   </span>
                 </Link>
                 <Button

@@ -9,7 +9,7 @@ export default function CollegeHelpPage() {
           <div className="bg-white dark:bg-slate-800 rounded-lg p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-4">Getting Started</h2>
             <p className="text-slate-600 dark:text-slate-400">
-              Welcome to Kiyo! Here you&apos;ll find helpful resources and
+              Welcome to Praxis! Here you&apos;ll find helpful resources and
               guides for managing your college dashboard.
             </p>
           </div>

@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
               <Card className="border-0 shadow-lg bg-background/50 backdrop-blur">
                 <CardContent className="p-8">
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    At Kiyo, your privacy is fundamental to our mission. This
+                    At Praxis, your privacy is fundamental to our mission. This
                     Privacy Policy explains how we collect, use, protect, and
                     handle your information when you use our enterprise project
                     management platform. We are committed to transparency and

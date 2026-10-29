@@ -314,7 +314,7 @@ export default function CompanyPublicPage() {
 
       <Separator className="my-6" />
       <p className="text-center text-xs text-muted-foreground">
-        Company page powered by Kiyo
+        Company page powered by Praxis
       </p>
     </div>
   );

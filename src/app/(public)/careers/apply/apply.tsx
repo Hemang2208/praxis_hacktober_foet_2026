@@ -324,7 +324,7 @@ export default function ApplyPage() {
                 : "Join Our Team"}
             </h1>
             <p className="text-muted-foreground">
-              Fill out the form below to apply for a position at KIYO.
+              Fill out the form below to apply for a position at Praxis.
               We&apos;ll get back to you soon.
             </p>
           </div>

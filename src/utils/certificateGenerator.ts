@@ -100,7 +100,7 @@ export const generateCertificate = (
   pdf.setFontSize(12);
   pdf.setTextColor(105, 105, 105);
   pdf.setFont("helvetica", "italic");
-  pdf.text("Kiyo Project Management System", 50, 185);
+  pdf.text("Praxis Project Management System", 50, 185);
   pdf.text(`Certificate ID: ${generateCertificateId()}`, 50, 195);
 
   // Date of issue
@@ -160,7 +160,7 @@ const drawStar = (pdf: jspdf, x: number, y: number, size: number) => {
 const generateCertificateId = (): string => {
   const timestamp = Date.now().toString(36);
   const randomStr = Math.random().toString(36).substring(2, 8);
-  return `KIYO-${timestamp}-${randomStr}`.toUpperCase();
+  return `PRAXIS-${timestamp}-${randomStr}`.toUpperCase();
 };
 
 export default generateCertificate;

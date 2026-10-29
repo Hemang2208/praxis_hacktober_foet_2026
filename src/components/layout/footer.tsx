@@ -46,14 +46,14 @@ export default function Footer() {
           >
             <div className="flex items-center mb-4">
               <Image
-                src="/KiyoLogoBnoBG.png"
-                alt="Kiyo Logo"
+                src="/logo.png"
+                alt="Praxis Logo"
                 width={40}
                 height={40}
                 className="h-10 w-10 rounded-sm bg-transparent object-contain p-1"
               />
               <span className="ml-3 text-2xl font-bold tracking-tight text-foreground">
-                Kiyo
+                Praxis
               </span>
             </div>
             <p className="mb-6 max-w-md text-[15px] leading-relaxed text-zinc-500">
@@ -128,9 +128,8 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-zinc-500">
               {[
                 { name: "Home", href: "/" },
-                { name: "About", href: "/about" },
-                { name: "Careers", href: "/careers" },
-                { name: "Contact", href: "/contact" },
+                { name: "Pre-Register", href: "/preregister" },
+                { name: "Sign Up", href: "/signup" },
               ].map((link, i) => (
                 <li key={i}>
                   <Link
@@ -207,17 +206,17 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Big background image */}
+      {/* Big background typography */}
       <div
         aria-hidden="true"
-        className="pointer-events-none relative flex select-none items-end justify-center px-4 md:px-10 -mt-8 mb-0.5 lg:mb-1"
+        className="pointer-events-none relative flex select-none items-end justify-center px-4 md:px-10 -mt-8 mb-0.5 lg:mb-1 overflow-hidden"
       >
-        <motion.img 
+        <motion.div 
           style={{ y: kiyoY, scale: kiyoScale, opacity: kiyoOpacity }}
-          src="/kiyo-large.png" 
-          alt="KIYO"
-          className="w-full max-w-[75vw] lg:max-w-5xl h-auto object-contain dark:invert"
-        />
+          className="w-full text-center font-black tracking-tighter text-[16vw] lg:text-[180px] leading-none text-foreground select-none pointer-events-none uppercase"
+        >
+          PRAXIS
+        </motion.div>
       </div>
     </footer>
   );

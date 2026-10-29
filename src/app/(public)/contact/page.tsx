@@ -1,5 +1,5 @@
-import ContactPage from "@/components/contact-page";
+import { redirect } from "next/navigation";
 
-export default function HomePage() {
-  return <ContactPage />;
+export default function ContactPage() {
+  redirect("/");
 }

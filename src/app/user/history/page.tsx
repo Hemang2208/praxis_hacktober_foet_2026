@@ -387,7 +387,7 @@ export default function ChatHistoryPage() {
             </div>
             <h3 className="text-lg font-bold text-zinc-900 dark:text-[#F5F5F5]">No conversations yet</h3>
             <p className="text-zinc-500 dark:text-[#A1A1AA] text-xs mt-2 max-w-sm">
-              Start a new conversation with Kiyo and it will appear here.
+              Start a new conversation with Praxis and it will appear here.
             </p>
             <Button
               onClick={handleNewChat}
