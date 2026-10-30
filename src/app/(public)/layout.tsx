@@ -11,7 +11,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
         <div className="min-h-screen bg-background">
             <Navbar />
             <main className="w-full">{children}</main>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

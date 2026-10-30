@@ -48,19 +48,19 @@ const companies = [
 
 const heroHighlights = [
   {
-    title: "Autonomous orchestration",
-    desc: "AI-managed delivery across multi-team portfolios with clarity at every step.",
-    icon: Bot,
+    title: "AI Onboarding & Training",
+    desc: "Onboard and train developers on real-world codebases with instant context.",
+    icon: GraduationCap,
   },
   {
-    title: "Integrated talent pipeline",
-    desc: "Assess, train, and deploy teams with realistic project simulations.",
-    icon: Brain,
+    title: "Smart Task Assignment",
+    desc: "AI-managed task breakdown and intelligent allocation aligned to team strengths.",
+    icon: Target,
   },
   {
-    title: "Enterprise-grade compliance",
-    desc: "Security, governance, and auditability built in from day one.",
-    icon: Shield,
+    title: "Automated PR Reviews",
+    desc: "Review every pull request with pre-approval analysis, keeping humans in final control.",
+    icon: GitBranch,
   },
 ];
 
@@ -73,7 +73,7 @@ const stats = [
   },
   {
     value: "50+",
-    label: "Pre-Registrations",
+    label: "Early Adopters",
     icon: ClipboardCheck,
     animate: { y: [0, -6, 0] },
   },
@@ -280,7 +280,8 @@ export default function NewLandingPage() {
   const [activeWorkflow, setActiveWorkflow] = useState(0);
   const workflowSectionRef = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress: workflowScrollProgress } = useScroll({
+  /*
+  // const { scrollYProgress: workflowScrollProgress } = useScroll({
     target: workflowSectionRef,
     offset: ["start start", "end end"],
   });
@@ -295,6 +296,7 @@ export default function NewLandingPage() {
     });
     return unsubscribe;
   }, [workflowScrollProgress]);
+  */
 
   return (
     <>
@@ -310,7 +312,7 @@ export default function NewLandingPage() {
         <div className="absolute -top-40 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-zinc-500/10 blur-[120px]" />
       </div>
 
-      <section ref={heroRef} className="relative pt-20 lg:pt-36 pb-12 lg:pb-24 min-h-[100dvh] flex flex-col lg:justify-center overflow-x-hidden">
+      <section ref={heroRef} className="relative pt-20 lg:pt-28 pb-8 lg:pb-12 min-h-[100dvh] flex flex-col lg:justify-center overflow-x-hidden">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <div className="absolute -top-32 left-1/2 h-[420px] w-[760px] -translate-x-1/2 rounded-full bg-zinc-500/14 blur-[190px]" />
           <div className="absolute right-[-6%] top-12 h-40 w-40 rounded-full border border-border/28 opacity-28" />
@@ -325,11 +327,11 @@ export default function NewLandingPage() {
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
-                className="inline-flex items-center gap-3 rounded-full border border-border/60 bg-background/70 px-4 py-2 text-xs uppercase tracking-[0.3em] text-zinc-500"
+                className="inline-flex items-center gap-3 rounded-full border border-border/60 bg-background/70 px-4 py-2 text-xs uppercase tracking-[0.2em] text-zinc-500"
               >
-                <span>AI Workflow</span>
+                <span>AI-POWERED DEVELOPER WORKSPACE</span>
                 <span className="h-1.5 w-1.5 rounded-full bg-zinc-400" />
-                <span>Developer OS</span>
+                <span>PROJECT INTELLIGENCE</span>
               </motion.div>
 
               <motion.h1
@@ -342,16 +344,16 @@ export default function NewLandingPage() {
                     transition: { staggerChildren: 0.08, delayChildren: 0.15 },
                   },
                 }}
-                className="mt-6 md:mt-8 text-[clamp(2rem,6.5vw,4.2rem)] leading-[0.95] font-[var(--font-montserrat)] tracking-tight text-foreground"
+                className="mt-6 md:mt-7 text-[clamp(2.4rem,4.5vw,3.8rem)] leading-[1.04] font-[var(--font-montserrat)] tracking-tight text-foreground"
               >
-                <span className="block lg:whitespace-nowrap">
-                  {renderWords("AI Workflow Platform")}
+                <span className="block">
+                  {renderWords("Every Project.")}
                 </span>
                 <motion.span
                   variants={wordVariants}
-                  className="block lg:whitespace-nowrap bg-gradient-to-r from-foreground via-zinc-500 to-foreground text-transparent bg-clip-text pb-2 lg:pb-4"
+                  className="block bg-gradient-to-r from-foreground via-zinc-500 to-foreground text-transparent bg-clip-text pb-1 lg:pb-2"
                 >
-                  for Engineering Teams
+                  Guided by AI.
                 </motion.span>
               </motion.h1>
 
@@ -362,13 +364,13 @@ export default function NewLandingPage() {
                   hidden: { opacity: 1 },
                   visible: {
                     opacity: 1,
-                    transition: { staggerChildren: 0.04, delayChildren: 0.6 },
+                    transition: { staggerChildren: 0.03, delayChildren: 0.5 },
                   },
                 }}
-                className="mt-8 max-w-xl text-lg text-zinc-500 leading-relaxed"
+                className="mt-6 max-w-xl text-base sm:text-lg text-zinc-500 leading-relaxed"
               >
                 {renderWords(
-                  "Starting with Developer Onboarding. Building the Future Developer OS.",
+                  "From kickoff to code review, Praxis empowers engineering teams with AI-powered onboarding, smart task assignments, and automated PR reviews.",
                 )}
               </motion.p>
 
@@ -376,9 +378,9 @@ export default function NewLandingPage() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.7 }}
-                className="mt-10 flex flex-col sm:flex-row gap-5"
+                className="mt-6 md:mt-7 flex flex-col sm:flex-row gap-4"
               >
-                <Link href="/preregister" className="group w-full sm:w-auto">
+                <Link href="/login" className="group w-full sm:w-auto">
                   <motion.button
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
@@ -398,12 +400,14 @@ export default function NewLandingPage() {
                 </Link>
               </motion.div>
 
-              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] sm:text-xs uppercase tracking-[0.15em] lg:tracking-[0.3em] text-zinc-500">
-                <span>Precision</span>
+              <div className="mt-4 flex flex-wrap items-center gap-x-3 sm:gap-x-4 gap-y-1.5 text-[10px] sm:text-xs uppercase tracking-[0.15em] lg:tracking-[0.2em] text-zinc-500">
+                <span>AI ONBOARDING</span>
                 <span className="hidden sm:block h-1.5 w-1.5 rounded-full bg-zinc-400" />
-                <span>Velocity</span>
+                <span>SMART TASKS</span>
                 <span className="hidden sm:block h-1.5 w-1.5 rounded-full bg-zinc-400" />
-                <span>Governance</span>
+                <span>CODE REVIEWS</span>
+                <span className="hidden sm:block h-1.5 w-1.5 rounded-full bg-zinc-400" />
+                <span>PROJECT PROGRESS</span>
               </div>
             </div>
 
@@ -418,9 +422,9 @@ export default function NewLandingPage() {
                   className="absolute left-8 right-8 top-12 rounded-[2.5rem] border border-border/60 bg-background/90 p-8 shadow-[0_40px_80px_-40px_rgba(0,0,0,0.6)]"
                 >
                   <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.3em] text-zinc-500">
-                    <span>AI Operator</span>
+                    <span>AI Project Assistant</span>
                     <span className="flex items-center gap-2">
-                      <span className="h-2 w-2 rounded-full bg-foreground/70 animate-pulse" />
+                      <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                       Active
                     </span>
                   </div>
@@ -430,33 +434,34 @@ export default function NewLandingPage() {
                       <Bot className="h-7 w-7" />
                     </div>
                     <div>
-                      <div className="text-lg font-semibold">Praxis AI Pilot</div>
-                      <div className="mt-1 text-[10px] uppercase tracking-[0.3em] text-zinc-500">
-                        Enterprise orchestration
+                      <div className="text-lg font-semibold">Praxis AI</div>
+                      <div className="mt-1 text-[10px] uppercase tracking-[0.2em] text-zinc-500">
+                        Your Development Workspace
                       </div>
                     </div>
                   </div>
 
                   <div className="mt-6 grid grid-cols-2 gap-4 text-xs text-zinc-500">
                     <div className="flex items-center gap-2">
+                      <GraduationCap className="h-4 w-4 text-foreground" />
+                      AI Onboarding
+                    </div>
+                    <div className="flex items-center gap-2">
                       <Target className="h-4 w-4 text-foreground" />
-                      Route alignment
+                      Smart Tasks
                     </div>
                     <div className="flex items-center gap-2">
-                      <Shield className="h-4 w-4 text-foreground" />
-                      Governance lock
+                      <GitBranch className="h-4 w-4 text-foreground" />
+                      PR Reviews
                     </div>
                     <div className="flex items-center gap-2">
-                      <Brain className="h-4 w-4 text-foreground" />
-                      Talent signal
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Zap className="h-4 w-4 text-foreground" />
-                      Delivery boost
+                      <BarChart3 className="h-4 w-4 text-foreground" />
+                      Progress Tracking
                     </div>
                   </div>
                 </motion.div>
 
+                {/* Floating pill 1: Code Review */}
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{
@@ -466,12 +471,14 @@ export default function NewLandingPage() {
                   }}
                   className="absolute right-6 top-6 rounded-2xl border border-border/60 bg-background/90 px-4 py-3 shadow-lg"
                 >
-                  <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-zinc-500">
-                    <Zap className="h-4 w-4 text-foreground" />
-                    +40% Delivery
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    <GitBranch className="h-4 w-4 text-foreground" />
+                    Code Review
                   </div>
+                  <div className="mt-1 text-xs font-semibold text-foreground">AI Powered</div>
                 </motion.div>
 
+                {/* Floating pill 2: Final Approval */}
                 <motion.div
                   animate={{ y: [0, 12, 0] }}
                   transition={{
@@ -482,13 +489,14 @@ export default function NewLandingPage() {
                   }}
                   className="absolute left-6 bottom-10 rounded-2xl border border-border/60 bg-background/90 px-4 py-3 shadow-lg"
                 >
-                  <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-zinc-500">
-                    <Shield className="h-4 w-4 text-foreground" />
-                    Compliance
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                    Final Approval
                   </div>
-                  <div className="mt-2 text-sm font-semibold">Verified</div>
+                  <div className="mt-1 text-xs font-semibold text-foreground">Human Controlled</div>
                 </motion.div>
 
+                {/* Floating pill 3: Project Insights */}
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
                   transition={{
@@ -499,11 +507,11 @@ export default function NewLandingPage() {
                   }}
                   className="absolute right-8 bottom-6 rounded-2xl border border-border/60 bg-background/90 px-4 py-3 shadow-lg"
                 >
-                  <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-zinc-500">
-                    <Brain className="h-4 w-4 text-foreground" />
-                    Talent Sync
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    <BarChart3 className="h-4 w-4 text-foreground" />
+                    Sprint Momentum
                   </div>
-                  <div className="mt-2 text-sm font-semibold">90% Ready</div>
+                  <div className="mt-1 text-xs font-semibold text-foreground">100% Tracked</div>
                 </motion.div>
               </div>
             </div>
@@ -545,6 +553,14 @@ export default function NewLandingPage() {
         </div>
       </section>
 
+
+      {/* =========================================================================
+          ADDITIONAL SECTIONS COMMENTED OUT: Only Hero Section & Navbar are shown
+          ========================================================================= */}
+      {
+        /* eslint-disable */
+        false && (
+        <>
       {/* <section className="pt-8 pb-16 border-y border-border/50 bg-muted/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs uppercase tracking-[0.3em] text-zinc-500">
@@ -568,7 +584,8 @@ export default function NewLandingPage() {
             ))}
           </motion.div>
         </div>
-      </section> */}
+      </section>
+ */}
 
       <section className="py-16 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -632,6 +649,7 @@ export default function NewLandingPage() {
           </div>
         </div>
       </section>
+
 
       <section className="py-16 lg:py-28 overflow-clip">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -707,6 +725,7 @@ export default function NewLandingPage() {
           </div>
         </div>
       </section>
+
 
       {/* Scroll-driven implementation process section */}
       <div
@@ -1031,6 +1050,7 @@ export default function NewLandingPage() {
         </div>
       </section>
 
+
       <section className="py-16 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto">
@@ -1154,6 +1174,7 @@ export default function NewLandingPage() {
         </div>
       </section>
 
+
       <section className="py-16 lg:py-28">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
           <motion.div
@@ -1170,7 +1191,7 @@ export default function NewLandingPage() {
               with AI-powered project management.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/preregister" className="group w-full sm:w-auto">
+              <Link href="/login" className="group w-full sm:w-auto">
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
@@ -1192,6 +1213,8 @@ export default function NewLandingPage() {
           </motion.div>
         </div>
       </section>
+        </>
+      )}
     </div>
     </>
   );

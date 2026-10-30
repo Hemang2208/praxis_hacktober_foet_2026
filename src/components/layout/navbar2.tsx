@@ -46,12 +46,6 @@ export default function Navbar() {
                                 }`}
                         >
                             <button
-                                className="px-4 py-2 text-left hover:bg-gray-700 transition-colors rounded-xl"
-                                onClick={() => window.location.href = "/preregister"}
-                            >
-                                Pre-Register
-                            </button>
-                            <button
                                 className="px-4 py-2 text-left hover:bg-gray-700 bg-black transition-colors rounded-xl"
                                 onClick={() => window.location.href = "/signup"}
                             >
@@ -64,12 +58,3 @@ export default function Navbar() {
         </div>
     );
 }
-
-// function YourLandingLogoComponent() {
-//     return (
-//         <div className="flex items-center gap-2">
-//             <Image fill src="/logo.png" alt="Logo" className="h-10 w-10" />
-//             <span className="text-3xl font-bold tracking-tight">Kiyo</span>
-//         </div>
-//     );
-// }

@@ -20,7 +20,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/preregister", label: "Pre-Register" },
+
   ];
 
   useEffect(() => {
@@ -121,7 +121,7 @@ export default function Navbar() {
           animate={preloaderFinished ? { y: 0, opacity: 1 } : { y: -80, opacity: 0 }}
           transition={{ type: "spring", stiffness: 120, damping: 14, delay: 0.25 }}
         >
-          <Link href="/signup">
+          <Link href="/login">
             <Button
               className="hidden md:inline-flex bg-black text-white hover:bg-gray-800 rounded-full px-5 py-2 font-semibold shadow-lg transition"
             >
@@ -171,7 +171,7 @@ export default function Navbar() {
                   </Link>
                 </motion.div>
               ))}
-              <Link href="/signup" onClick={() => setIsOpen(false)}>
+              <Link href="/login" onClick={() => setIsOpen(false)}>
                 <Button
                   className="w-full bg-black text-white hover:bg-gray-800 rounded-full px-5 py-2 font-semibold shadow-lg transition"
                 >

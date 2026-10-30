@@ -294,7 +294,7 @@ const LandingPage = () => {
               variants={itemFadeIn}
               className="flex flex-col items-center sm:flex-col md:flex-row gap-6 justify-center mb-12"
             >
-              <Link href="/preregister" className="w-full md:w-fit">
+              <Link href="/login" className="w-full md:w-fit">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -305,7 +305,7 @@ const LandingPage = () => {
                 </motion.button>
               </Link>
 
-              <Link href="/contact" className="w-full md:w-fit">
+              <Link href="/login" className="w-full md:w-fit">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -1203,7 +1203,7 @@ const LandingPage = () => {
         transition={{ delay: 1, duration: 0.5, type: "spring" }}
         className="fixed bottom-6 right-6 z-50"
       >
-        <Link href="/contact" className="text-decoration-none cursor-pointer">
+        <Link href="/login" className="text-decoration-none cursor-pointer">
           <motion.button
             whileHover={{
               scale: 1.1,

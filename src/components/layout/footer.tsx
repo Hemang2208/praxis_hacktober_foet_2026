@@ -98,7 +98,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-zinc-500">
               {[
-                { name: "Pre-Register", href: "/preregister" },
+
                 { name: "Why Us?", href: "/#whyus" },
                 { name: "Features", href: "/#features" },
                 { name: "How it works?", href: "/#workflow" },
@@ -128,7 +128,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-zinc-500">
               {[
                 { name: "Home", href: "/" },
-                { name: "Pre-Register", href: "/preregister" },
+
                 { name: "Sign Up", href: "/signup" },
               ].map((link, i) => (
                 <li key={i}>
