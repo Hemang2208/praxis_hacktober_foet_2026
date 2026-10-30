@@ -3960,13 +3960,17 @@ export function SupportChatContainer({ chatId, isOverview = false }: SupportChat
       }
 
       let accumulatedResponse = "";
+      let settled = false;
 
       await new Promise<void>((resolve, reject) => {
         cleanupHandler = supportSocket.onMessage((data: any) => {
+          if (settled) return;
+          if (data.type === "pong" || data.type === "ping") return;
           if (data.type === "token") {
             accumulatedResponse += data.content || "";
             updateMessage(currentActiveChatId!, assistantMessageId, accumulatedResponse);
           } else if (data.type === "message_complete") {
+            settled = true;
             const finalAnswer = data.content?.answer || accumulatedResponse;
             updateMessage(currentActiveChatId!, assistantMessageId, finalAnswer, data.content?.context_used);
 
@@ -3992,6 +3996,10 @@ export function SupportChatContainer({ chatId, isOverview = false }: SupportChat
             }
             resolve();
           } else if (data.type === "error") {
+            if (data.content?.code === "missing_query" && accumulatedResponse) {
+              return;
+            }
+            settled = true;
             const errMsg = data.content?.message || "Error processing your request.";
             updateMessage(currentActiveChatId!, assistantMessageId, `❌ ${errMsg}`);
             resolve();

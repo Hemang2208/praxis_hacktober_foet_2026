@@ -104,6 +104,9 @@ class SupportSocketManager {
     this.socket.onmessage = (event: MessageEvent) => {
       try {
         const data = JSON.parse(event.data);
+        if (data?.type === "pong" || data?.type === "ping") {
+          return;
+        }
         this.emit("onMessage", data);
       } catch {
         this.emit("onMessage", event.data);
