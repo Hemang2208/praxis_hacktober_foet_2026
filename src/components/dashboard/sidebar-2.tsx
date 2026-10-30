@@ -12,7 +12,7 @@ import {
   // Award,
   HelpCircle,
   FolderKanban,
-  // BookOpen,
+  BookOpen,
   User,
   ChevronLeft,
   X,
@@ -87,6 +87,11 @@ const getSidebarSections = (
     {
       title: "INSIGHTS",
       items: [
+        {
+          title: "Analytics",
+          icon: BarChart3,
+          href: `${basePath}/analytics`,
+        },
         {
           title: "GitHub",
           icon: GitBranch,

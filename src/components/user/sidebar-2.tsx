@@ -8,10 +8,10 @@ import {
   LayoutDashboard,
   // CheckSquare,
   GitBranch,
-  // Award,
+  Award,
   HelpCircle,
   FolderKanban,
-  // BookOpen,
+  BookOpen,
   User,
   X,
   ChevronLeft,
@@ -81,21 +81,6 @@ const sidebarSections = (projectCount: number | null): SidebarSection[] => [
       // },
     ],
   },
-  //{
-  //  title: "LEARNING",
-  //  items: [
-  //    {
-  //      title: "Learning Paths",
-  //      icon: BookOpen,
-  //      href: "/user/learning",
-  //    },
-  //    {
-  //      title: "Certificates",
-  //      icon: Award,
-  //      href: "/user/certificates",
-  //    },
-  //  ],
-  //},
   {
     title: "INSIGHTS",
     items: [
@@ -103,6 +88,16 @@ const sidebarSections = (projectCount: number | null): SidebarSection[] => [
         title: "Connections",
         icon: GitBranch,
         href: "/user/connections",
+      },
+      {
+        title: "Learning",
+        icon: BookOpen,
+        href: "/user/learning",
+      },
+      {
+        title: "Certifications",
+        icon: Award,
+        href: "/user/certificates",
       },
     ],
   },
